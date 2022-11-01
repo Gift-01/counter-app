@@ -1,0 +1,72 @@
+.counter {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  row-gap: 10px;
+}
+
+.screen {
+  width: 40%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.functions {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.functions__first {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.functions__first-btn,
+.functions__second-btn,
+.functions__third-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.functions__first-btn {
+  width: 48%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.functions__second-btn {
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+}
+
+.functions__third {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.functions__third-input {
+  width: 60%;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+
+.functions__third-btn {
+  width: 30%;
+}
