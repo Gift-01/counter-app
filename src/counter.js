@@ -11,18 +11,6 @@ const Counter = () => {
 
   const [newValue, setNewValue] = useState("");
 
-  // const increment = useCounter({ dispatch: dispatch, type: "INCREMENT" });
-
-  // const decrement = useCounter({ dispatch: dispatch, type: "DECREMENT" });
-
-  // const reset = useCounter({ dispatch: dispatch, type: "RESET" });
-
-  // const setValue = useCounter({
-  //   dispatch: dispatch,
-  //   type: "SET VALUE",
-  //   val: newValue,
-  // });
-
   const [newError, setNewError] = useState("");
 
   useEffect(() => {
@@ -79,6 +67,8 @@ const Counter = () => {
               </button>
               <div className="functions__third">
                 <input
+                  id="value"
+                  aria-label="value"
                   className="functions__third-input"
                   value={newValue}
                   onChange={(e) => {
@@ -89,6 +79,7 @@ const Counter = () => {
                     }
                   }}
                 />
+
                 <button
                   className="functions__third-btn"
                   onClick={() => {

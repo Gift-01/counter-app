@@ -70,3 +70,11 @@
 .functions__third-btn {
   width: 30%;
 }
+@media (max-width: 768px) {
+  .functions {
+    width: 80%;
+  }
+  .screen {
+    width: 80%;
+  }
+}
