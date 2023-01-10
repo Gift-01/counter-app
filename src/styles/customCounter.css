@@ -1,0 +1,70 @@
+.custom-counter {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.custom-screen {
+  width: 40%;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-functions {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.custom-functions_first {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-first-btn,
+.custom-second-btn,
+.custom-third-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.custom-first-btn {
+  width: 48%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.custom-second-btn {
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+}
+
+.custom-third-btn {
+  width: 30%;
+}
+
+.custom-functions-third {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.custom-input {
+  width: 60%;
+  border: none;
+  text-align: center;
+  outline: none;
+}

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Counter from "./counter";
+import CustomCounter from "./customCounter";
 import Error404Page from "./404";
 import "./styles/App.css";
 import { Helmet } from "react-helmet-async";
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Counter />} />
+          <Route path="/customCounter" element={ <CustomCounter/>} />
           <Route path="*" element={<Error404Page />} />
         </Routes>
       </BrowserRouter>

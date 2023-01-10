@@ -1,9 +1,9 @@
 import React, { useReducer, useState, useEffect } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import { useCounter } from "./customCounterHook";
 import { ErrorFallback } from "./errorBoundary";
-import { reducer } from "./reducer";
 import "./styles/counter.css";
+import { reducer } from "./reducer";
+import NavBar from "./navBar";
 
 const Counter = () => {
   const initialValue = 0;
@@ -23,6 +23,7 @@ const Counter = () => {
 
   return (
     <div className="counter">
+      <NavBar />
       <ErrorBoundary resetKeys={[newError]} FallbackComponent={ErrorFallback}>
         {newError ? (
           <ErrorFallback
@@ -38,36 +39,27 @@ const Counter = () => {
               <div className="functions__first">
                 <button
                   className="functions__first-btn"
-                  onClick={() =>
-                    // eslint-disable-next-line react-hooks/rules-of-hooks
-                    useCounter({ dispatch: dispatch, type: "INCREMENT" })
-                  }
+                  onClick={() => dispatch({ type: "INCREMENT" })}
                 >
                   +
                 </button>
                 <button
                   className="functions__first-btn"
-                  onClick={() =>
-                    // eslint-disable-next-line react-hooks/rules-of-hooks
-                    useCounter({ dispatch: dispatch, type: "DECREMENT" })
-                  }
+                  onClick={() => dispatch({ type: "DECREMENT" })}
                 >
                   -
                 </button>
               </div>
               <button
                 className="functions__second-btn"
-                onClick={() =>
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
-                  useCounter({ dispatch: dispatch, type: "RESET" })
-                }
+                onClick={() => dispatch({ type: "RESET" })}
               >
-                {" "}
                 RESET
               </button>
               <div className="functions__third">
                 <input
                   id="value"
+                  type="number"
                   aria-label="value"
                   className="functions__third-input"
                   value={newValue}
@@ -83,9 +75,7 @@ const Counter = () => {
                 <button
                   className="functions__third-btn"
                   onClick={() => {
-                    // eslint-disable-next-line react-hooks/rules-of-hooks
-                    useCounter({
-                      dispatch: dispatch,
+                    dispatch({
                       type: "SET VALUE",
                       val: newValue,
                     });

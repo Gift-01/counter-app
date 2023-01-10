@@ -1,0 +1,36 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: bisque;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+.nav-btn {
+  outline: none;
+  border: none;
+  margin: 10px;
+  font-size: medium;
+  border-radius: 10px;
+  background-color: bisque;
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    top: 50px;
+  }
+}
