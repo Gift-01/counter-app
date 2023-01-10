@@ -13,11 +13,11 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: #ff512f;
 }
 
 a:hover {
-  color: gray;
+  color: black;
 }
 
 .nav-btn {

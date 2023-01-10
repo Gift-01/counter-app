@@ -13,7 +13,7 @@ function CustomCounter() {
   const [increment, decrement, reset, setCount, counter] = useCounter();
 
   return (
-    <div className="counter">
+      <div style={ {backgroundColor:"#ff512f"}} className="counter">
       <NavBar />
 
       <div className="screen">
